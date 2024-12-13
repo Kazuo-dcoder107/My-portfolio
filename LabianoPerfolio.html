@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Personal Perfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body> 
+   <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-j"></i>
+                        <div class="logo-text">John Daniel M. Labiano</div>
+                </div>
+                <nav>
+                    <input type="checkbox" id="check">;
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#ABOUT">ABOUT ME</a></li>
+                        <li><a href="#project">Project Showcase</a></li>
+                        <li><a href="#SDG">SDG Features</a></li>
+                        <li><a href="#contact">CONTACTS</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="hero-pic">
+                 <img src="2x2 new formal.jpeg" alt="profile pic" width="300px" height="300px">
+                </div>
+                <section class="home" id="home">
+                    <div class="HOME">
+                        <div class="hero-text">
+                            <h4> Hi I'm <span class="input"> Web Developer</span></h4>
+                         <h1>John Daniel M. Labiano</h1>
+                         <p>I am currently a first year BSIT student from the Batangas State University The National Engineering University, I am ready to learn the essence of programming. I am up to the test to take the major of network technology as I progress in this course. In addition, I am a hardworking person as well as a reliable person in line.</p>
+                         <div class="btn-group">
+                         <a href="#" class="btn active">Download CV</a>
+                         <a href="#" class="btn">Contact</a>
+                        </div>
+                    </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/johndaniel.labiano?mibextid=ZbWKwL">
+                            <i class="fa-brands fa-facebook"></i></a> 
+                             <a href="https://www.instagram.com/johndaniellabiano/">
+                            <i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
+                            <i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/Kazuo-dcoder107">
+                            <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+        </div>
+   </div> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+                </section>
+   <script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click", function() {
+        this,classList.toggle("click");
+        nav.classList.toggle("open");
+    })
+
+    var typed=new Typed(".input",{
+        strings:[" Web Developer", " Data Analyst", " Network Specialist"],
+        typeSpeed:70,
+        backSpeed:55,
+        loop:true
+        })
+   </script> 
+    <section class="ABOUT" id="ABOUT">
+        <h2 class="heading"> ABOUT ME</h2>
+        
+        <div class="profile-section">
+            <h2>Profile Information</h2>
+            <div class="profile-item">
+                <label for="name">Name:</label>
+                <span id="name">John Daniel M. Labiano</span>
+            </div>
+            <div class="profile-item">
+                <label for="age">Age:</label>
+                <span id="age">18</span>
+            </div>
+            <div class="profile-item">
+                <label for="address">Address:</label>
+                <span id="address">1204 Pahinga Norte Candelaria, Quezon</span>
+            </div>
+            <div class="profile-item">
+                <label for="specialization">Specialization:</label>
+                <span id="specialization">Bachelor of Science in Information Technology</span>
+            </div>
+        </div>
+        <div class="skills-section">
+            <h2 style="color:white">My Skills</h2>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 55%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 59%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Data Analysis</div>
+                <div class="skill-bar">
+                    <div class="skill-bar-fill" style="width: 35%;"></div>
+                </div>
+            </div>
+
+        <h3 class="education"> Education</h3>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <div class="timeline-date">2012-2015</div>
+                    <div class="timeline-content">
+                        <h4>Primary: Headstart Christian Learning Institute, Inc.(Grade 1-3)</h4>
+                        <p>Achievements: With Honors</p> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div> 
+                    <div class="timeline-date">2015-2018</div>
+                    <div class="timeline-content">
+                        <h4>Primary:Pahinga Norte Elementary School<br> (Grade 4-6)</h4>
+                        <p>Achievements: Boy Scout of the Year, Tag- Isip Ap (Team) 2015-2018</p> 
+                    </div>
+                
+            </div>
+
+
+            
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018-2022</div>
+                    <div class="timeline-content">
+                        <h4>Junior Highschool: The Lady Mediatrix Institute Inc.</h4>
+                        <p>Achievements: With Honors</p> 
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022-2024</div>
+                    <div class="timeline-content">
+                        <h4>Senior Highschool: Manuel S. Enverga University Foundation-Candelaria Inc.</h4>
+                        <p>Achievements: With Honors</p> 
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024-present</div>
+                    <div class="timeline-content">
+                        <h4>College: Batangas State University The National Engineering University</h4> 
+                    </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <section class="project" id="project">
+        <div class="projects-container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <p>A collection of projects that showcase my skills and passion for creating innovative solutions.</p>
+            </div>
+    
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="tictactoe.jpeg" alt="tictactoe" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Tic Tac Toe</h3>
+                        <p class="project-description">A board game for two players that can play in a 3x3 grid with the goal of getting three marks in a row. </p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">C++</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Kazuo-dcoder107/my-hub/blob/main/my%20trial%20code/tictactoe.cpp" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="calculator.jpeg" alt="calculator" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Basic Calculator</h3>
+                        <p class="project-description">A basic calculator that can perform basic operation such as addition, subtraction, multiplication and division.<p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">C++</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Kazuo-dcoder107/my-hub/blob/main/my%20trial%20code/calculator.cpp" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-card">
+                    <img src="currency.png" alt="currency" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Currency Converter</h3>
+                        <p class="project-description">A system that could convert the Philippine pesos (PHP) into the value of United State Dollar (USD), Canadian Dollars (CAD), and British Pound Sterling (GBP).</p>
+                        <div class="project-technologies">
+                            <span class="tech-tag">C++</span>
+                            
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Kazuo-dcoder107/my-hub/blob/main/my%20trial%20code/currency%20converter.cpp" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="SDG" id="SDG">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">SDG 9: Industry, Innovation, and Infrastructure</h1>
+                <p class="section-subtitle">
+                    It recognizes that humanity's ability to connect and comnmunicate effectively, and develop new skills, industries and technology, is crucial in overcomming the many interlinked economic, social and environmental challenges in the 21st century. 
+                </p>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="feature-title">Infrastructure</h2>
+                    <p class="feature-description">
+                       It aims to built buildings that are reliable and resilient that can support economic development and human well-being. 
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h2 class="feature-title">Industrialization</h2>
+                    <p class="feature-description">
+                        It is promoting inclusive and sustainable industrialization that creates jobs to the people as well as reduces the income inequality.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h2 class="feature-title">Innovation</h2>
+                    <p class="feature-description">
+                       It gives the advances that could lead both technological capabilities and industrial sectors to the development of new skills and products.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h2 class="feature-title">Access to Information</h2>
+                    <p class="feature-description">
+                        It gives all around access to information and communications technology that could strive to provide universal and affordable access across the web. 
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h2 class="feature-title">Share of Employment</h2>
+                    <p class="feature-description">
+                        Significally could help the industry's employment in line with the national circumstances, and double its share in least developed countries. 
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h2 class="feature-title">Economic Growth</h2>
+                    <p class="feature-description">
+                        It is the product of the overall development and investment in the infrastructure, as well as the sustainable industrial development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Contact Us</h2>
+                <p>Have a question or want to work together? Fill out the form below.</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+   <footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/johndaniel.labiano?mibextid=ZbWKwL">
+            <i class="fa-brands fa-facebook"></i></a> 
+             <a href="https://www.instagram.com/johndaniellabiano/">
+            <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit">
+            <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Kazuo-dcoder107">
+            <i class="fa-brands fa-github"></i></a>
+        </div>  
+        <div class="footerNav">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#ABOUT">ABOUT ME</a></li>
+                <li><a href="#project">Project Showcase</a></li>
+                <li><a href="#SDG">SDG Features</a></li>
+                <li><a href="#contact">CONTACTS</a></li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2024; Designed by <span class="designer">John Daniel M. Labiano</span></p>
+        </div>
+    </div>
+   </footer>
+</body>
+</html>
